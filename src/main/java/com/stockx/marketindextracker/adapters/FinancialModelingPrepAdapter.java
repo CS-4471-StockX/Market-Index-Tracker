@@ -2,7 +2,6 @@ package com.stockx.marketindextracker.adapters;
 
 import com.stockx.marketindextracker.HistoricalMarketIndexPrice;
 import com.stockx.marketindextracker.MarketIndex;
-import com.stockx.marketindextracker.MarketIndexWrap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -25,11 +24,11 @@ public class FinancialModelingPrepAdapter {
         return restTemplate.getForObject(url, HistoricalMarketIndexPrice.class);
     }
 
-    public MarketIndexWrap getCurrentIndex(String ticker){
+    public MarketIndex[] getCurrentIndex(String ticker){
         String url = UriComponentsBuilder.fromUriString(BASE_URL).path("/quote")
                 .pathSegment(ticker)
                 .queryParam("apikey", "bed2d806b7cbf8b5a704526ebb96b62e").build().toUriString();
 
-        return new MarketIndexWrap(Arrays.asList(Objects.requireNonNull(restTemplate.getForObject(url, MarketIndex[].class))));
+        return restTemplate.getForObject(url, MarketIndex[].class);
     }
 }
