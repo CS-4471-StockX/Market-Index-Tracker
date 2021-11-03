@@ -1,6 +1,7 @@
 package com.stockx.marketindextracker.services;
 
 import com.stockx.marketindextracker.HistoricalMarketIndexPrice;
+import com.stockx.marketindextracker.MarketIndex;
 import com.stockx.marketindextracker.adapters.FinancialModelingPrepAdapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,5 +14,9 @@ public class MarketIndexTrackerServices {
 
     public HistoricalMarketIndexPrice getHistoricalMarketIndexPriceByTicker(String ticker) {
         return financialModelingPrepAdapter.getHistoricalMarketIndexPriceByTicker(ticker);
+    }
+
+    public MarketIndex getMarkerIndexByTicker(String ticker){
+        return financialModelingPrepAdapter.getCurrentIndex(ticker)[0];
     }
 }

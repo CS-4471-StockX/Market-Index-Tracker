@@ -1,6 +1,7 @@
 package com.stockx.marketindextracker.controllers;
 
 import com.stockx.marketindextracker.HistoricalMarketIndexPrice;
+import com.stockx.marketindextracker.MarketIndex;
 import com.stockx.marketindextracker.services.MarketIndexTrackerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +17,10 @@ public class MarketIndexTrackerController {
     @GetMapping("/historical/market-index-price")
     public HistoricalMarketIndexPrice getHistoricalMarketIndexPriceByTicker(@RequestParam("ticker") String ticker) {
         return marketIndexTrackerServices.getHistoricalMarketIndexPriceByTicker(ticker);
+    }
+
+    @GetMapping("/market-index")
+    public MarketIndex getMarketIndexByTicker(@RequestParam("ticker") String ticker){
+        return marketIndexTrackerServices.getMarkerIndexByTicker(ticker);
     }
 }
