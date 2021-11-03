@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class FinancialModelingPrepAdapter {
 
     @Autowired
@@ -27,6 +30,6 @@ public class FinancialModelingPrepAdapter {
                 .pathSegment(ticker)
                 .queryParam("apikey", "bed2d806b7cbf8b5a704526ebb96b62e").build().toUriString();
 
-        return restTemplate.getForObject(url, MarketIndexWrap.class);
+        return new MarketIndexWrap(Arrays.asList(Objects.requireNonNull(restTemplate.getForObject(url, MarketIndex[].class))));
     }
 }
