@@ -1,0 +1,10 @@
+com/stockx/marketindextracker/MarketIndex.class
+com/stockx/marketindextracker/controllers/MarketIndexTrackerController.class
+com/stockx/marketindextracker/MarketIndexTrackerApplication.class
+com/stockx/marketindextracker/configurations/AppConfiguration.class
+com/stockx/marketindextracker/HistoricalMarketIndexPrice.class
+com/stockx/marketindextracker/HistoricalMarketIndexPriceDTO.class
+com/stockx/marketindextracker/adapters/FinancialModelingPrepAdapter.class
+com/stockx/marketindextracker/MarketIndexDayEnd.class
+com/stockx/marketindextracker/services/MarketIndexTrackerServices.class
+com/stockx/marketindextracker/HistoricalMarketIndexPrices.class
