@@ -26,7 +26,7 @@ public class MarketIndexTrackerServices {
             if (counter < 21) {
                 oneMonth.getHistorical().put(marketIndexDayEnd.getDate(), marketIndexDayEnd.getClose());
             }
-            if (counter < 253) {
+            if (counter < 251) {
                 oneYear.getHistorical().put(marketIndexDayEnd.getDate(), marketIndexDayEnd.getClose());
             }
             fiveYear.getHistorical().put(marketIndexDayEnd.getDate(), marketIndexDayEnd.getClose());
