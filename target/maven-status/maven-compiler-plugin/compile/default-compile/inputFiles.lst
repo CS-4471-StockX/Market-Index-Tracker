@@ -1,0 +1,10 @@
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/services/MarketIndexTrackerServices.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/MarketIndexTrackerApplication.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/HistoricalMarketIndexPrices.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/MarketIndex.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/controllers/MarketIndexTrackerController.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/MarketIndexDayEnd.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/HistoricalMarketIndexPriceDTO.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/configurations/AppConfiguration.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/HistoricalMarketIndexPrice.java
+/home/jwanger/Documents/CS4471/Market-Index-Tracker/src/main/java/com/stockx/marketindextracker/adapters/FinancialModelingPrepAdapter.java
