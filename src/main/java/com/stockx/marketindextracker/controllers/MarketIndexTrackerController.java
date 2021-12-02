@@ -15,13 +15,13 @@ public class MarketIndexTrackerController {
     @Autowired
     MarketIndexTrackerServices marketIndexTrackerServices;
 
-    @CrossOrigin(origins = "https://www.stockx.software")
+    @CrossOrigin(origins = "*")
     @GetMapping("/historical/market-index-price")
     public HistoricalMarketIndexPrices getHistoricalMarketIndexPriceByTicker(@RequestParam("ticker") String ticker) {
         return marketIndexTrackerServices.getHistoricalMarketIndexPriceByTicker(ticker);
     }
 
-    @CrossOrigin(origins = "https://www.stockx.software")
+    @CrossOrigin(origins = "*")
     @GetMapping("/market-index")
     public MarketIndex getMarketIndexByTicker(@RequestParam("ticker") String ticker) {
         return marketIndexTrackerServices.getMarkerIndexByTicker(ticker);
